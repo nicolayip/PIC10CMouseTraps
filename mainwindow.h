@@ -1,13 +1,18 @@
+/**@file mainwindow.h
+ * @brief should implement beginner, intermediate, expert buttons but does nothing
+  */
+
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
 #include <QMainWindow>
 #include "gameboard.h"
 
-namespace Ui {
-class MainWindow;
-}
+/*! \class MainWindow
+    \brief a class for board
 
+    class should implement beginner, intermediate, expert buttons
+*/
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -24,8 +29,7 @@ public:
     ~MainWindow();
 
 private:
-    Ui::MainWindow *ui;
-    gameboard* board;
+    Gameboard* board;
 };
 
 #endif // MAINWINDOW_H
